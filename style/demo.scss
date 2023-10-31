@@ -1,0 +1,57 @@
+@import "./mixins";
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    background-color: #2DC071;
+    background-image: url(../img/avatars.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 140%;
+
+    @include mobile{
+    background-image: none;
+    }
+    @include tablet{
+        background-image: none;
+      }
+    
+    
+}
+ 
+
+
+#post{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+
+   
+
+    .post__content{
+        
+        .post__content-text{
+            color: white;
+            letter-spacing:1px;
+            margin-top: 40%;
+            margin-left: 3%;
+            
+           
+              
+           .post__content-btn{
+            border-radius: 25px;
+            padding: 20px 40px;
+            background-color:#2DC071;
+            color: white;
+            border-color: white;
+            border: 1px solid white;
+            
+            
+
+            }
+        }
+     
+    }
+
+}
